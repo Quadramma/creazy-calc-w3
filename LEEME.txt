@@ -1,0 +1,6 @@
+
+Los archivos forman parte de un boilerplate html5 descargado de 
+
+http://html5boilerplate.com/
+
+El codigo de la calculadora para w3 se encuentra en js/main.js
