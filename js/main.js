@@ -38,6 +38,27 @@ $(function() {
 		$("#myTable tbody").html('');
 	});
 
+	$('#test').on('click', function() {
+		setTimeout(function() {
+			addValue(800000);
+		}, 1000);
+		setTimeout(function() {
+			addValue(1700000);
+		}, 2000);
+		setTimeout(function() {
+			addValue(200000);
+		}, 3000);
+		if (!event) event = window.event;
+		event.preventDefault();
+	});
+
+	function addValue(val) {
+		console.log('addValue ' + val);
+		$('#input').val(val);
+		add();
+	}
+
+
 	function add() {
 		var val = $('#input').val();
 		if (val == "" || isNaN(val)) {
